@@ -10,3 +10,8 @@
 ◇ injected env (6) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
 MongoDB connected
 Server running on port 5000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (6) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+MongoDB connected
+Server running on port 5000
