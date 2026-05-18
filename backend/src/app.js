@@ -46,3 +46,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 module.exports = app;
+
+app.get('/api/health', (req, res) => {
+  res.json({ success: true, message: 'API is healthy' });
+});
