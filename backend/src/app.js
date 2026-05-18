@@ -15,6 +15,10 @@ const allowedOrigins = [
   "http://127.0.0.1:5173"
 ].filter(Boolean);
 
+app.get('/api/health', (req, res) => {
+  res.json({ success: true, message: 'API is healthy' });
+});
+
 app.use(cors({
   origin(origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -46,7 +50,3 @@ app.use(notFound);
 app.use(errorHandler);
 
 module.exports = app;
-
-app.get('/api/health', (req, res) => {
-  res.json({ success: true, message: 'API is healthy' });
-});
